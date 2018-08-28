@@ -1,0 +1,190 @@
+body{
+  background-color: #000;
+  color: #fff;
+  background-repeat: no-repeat;
+  font-family: $lato;
+  background-size: cover;
+  height: 100%;
+}
+
+
+.App{
+  text-align: center;
+  padding: 5%;
+}
+
+.App-title{
+  font-size: 26px;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+}
+
+
+.profile-image{
+  width: 150px;
+  height: 150px;
+  border:3px solid #fff;
+  border-radius: 75px;
+  object-fit: cover;
+}
+
+.profile-genre,.profile-follower {
+  font-size: 18px;
+}
+
+.profile-name{
+  font-size: 25px;
+}
+
+.profile-info{
+  margin-left: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/*  Gallery*/
+
+.track{
+  display: inline-block;
+  width: 220px;
+  height:220px;
+
+  margin: 10px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.track-img{
+  width: 220px;
+  height:220px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.track-text{
+  background-color: black;
+  color: white;
+  opacity: 0.75 ;
+  width: 214px;
+  margin-left: 3px;
+  text-align: center;
+  position:absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+.track-play{
+  position: absolute;
+  height: 220px;
+  width: 220px;
+}
+
+.track-play-inner{
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  background-color: black;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  color: white;
+  padding-top: 13px;
+  margin-left: 80px;
+  margin-top: 80px;
+  opacity: 0;
+}
+
+.track-play-inner:hover{
+  opacity: 0.8;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+.movie{
+  height:600px;
+  width: 100%;
+  position: relative;
+}
+
+.not-found{
+  color: lime;
+}
+
+.tagline{
+  font-size: 23px;
+  color: red;
+}
+.movie-details{
+  width:800px;
+  float:right;
+  margin-top: -603px;
+  position: relative;
+
+}
+.movie-title{
+  font-size: 50px;
+  text-align: left;
+  margin-top: 10px;
+  color: lime;
+}
+
+.synopsis{
+  font-size: 20px;
+  text-align: justify;
+}
+
+h1{
+  color: lime;
+}
+.poster{
+  height:578px;
+  width: 350px;
+  margin: 10px;
+  border: 2px solid #fff;
+  margin-left: -984px;
+  display: inline-table;
+}
+.Average-title{
+  font-size: 25px;
+  color: lime;
+  text-align: left;
+  width: 100px;
+
+}
+
+.release-title{
+  font-size: 25px;
+  color: lime;
+  text-align: right;
+  margin-top: -63px;
+  margin-right: 328px;
+
+}
+
+.Average{
+  font-size: 20px;
+  margin-left: -704px;
+}
+
+.date{
+  font-size: 20px;
+  text-align: right;
+}
+
+@@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0.8;
+  }
+}
